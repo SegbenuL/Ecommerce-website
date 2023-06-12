@@ -37,10 +37,10 @@
     margin-right: 20%;
     margin-top: 20%;
     width: 50%;
-    height: 171px;
+    height: fit-content;
     vertical-align:auto;
-    /* align-self: center; */
-    padding: 10px;
+    align-self: center;
+    /* padding: 10px; */
     background: rgba(255, 255, 255, 0.83);
 }
 .box a{
@@ -57,9 +57,7 @@
     background-position: center;
     background-size: cover;
     margin: 10px;
-    /* margin-top: 53px; */
-    /* left: calc(50% - 350px/2 - 0.5px);
-    margin: 0%; */
+
 
 }
 
@@ -71,11 +69,12 @@
     background-position: center center;
     background-size: cover;
     margin: 10px;
-    /* margin-top: 20.93px; */
+
 }
 
 .hero{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     font-family: 'Poppins';
@@ -83,7 +82,6 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    /* or 125% */
     text-align:left;
     color: #000000;
     margin-top: 10px;
@@ -103,9 +101,7 @@
 .box1 a{
     color: #000000;
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-
-    
+    font-size: 16px;    
 }
 .box1 p{
         color: #000000;
@@ -145,195 +141,214 @@ h2{
     text-align: center;
 
 }
-.box3{
+.main{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.8rem;
+    width: 100%;
+}
+.product{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    color: white;
+
+}
+.product.box3{
     background-image: url('/img/13.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
-    text-align:center;
-    line-height: 350px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box4{
+.product.box4{
     background-image: url('/img/2 (3).webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box5{
+.product.box5{
     background-image: url('/img/3.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box6{
+.product.box6{
     background-image: url('/img/4.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box7{
+.product.box7{
     background-image: url('/img/5.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box8{
+.product.box8{
     background-image: url('/img/6.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box9{
+.product.box9{
     background-image: url('/img/7.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
-    margin: 10px;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
 }
-.box10{
+.product.box10{
     background-image: url('/img/8.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(52, 48, 48, 0.5);
+    background-blend-mode: overlay;
+}
+.news-container{
+    width: 95%;
+    margin: 0px auto;
+}
+.article{
     width: 350px;
     height: 350px;
-    margin: 10px;
+    background-repeat: no-repeat; 
+    margin-bottom: 19px;
+    position: relative;
 }
-.main{
-    flex-grow: inherit;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    flex-direction: row;
-    float: inline-start;
-    margin-inline-start: 10px;
-    flex-flow: wrap;
-    width:fit-content;
-    /* margin: 10px;
-    margin-top: 10px; */
+.news .news1{
+    background-image: url('/img/1 (2).jpg');
 }
-
-
-.box3-opacity p{
-    color: white;
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 125%;
+.news .news2{
+    background-image: url('/img/2 (4).jpg');
+}
+.news .news3{
+    background-image: url('/img/3 (1).jpg');
 }
 .news{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center;
     align-self: center;
-    /* flex-direction: row; */
-}
-.article{
-    background-image: url('/img/1 (2).jpg');
-    width: 350px;
-    height: 350px; 
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 19px;
-}
-.article1{
-    background-image: url('/img/2 (4).jpg');
-    width: 350px;
-    height: 350px; 
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 19px;
 }
 
-.article2{
-    background-image: url('/img/3 (1).jpg');
-    width: 350px;
-    height: 350px; 
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 19px;
-}
-
-.smallbox{
+.news .smallbox{
     width: 67px;
-    height: 67px;
     background: rgba(255, 255, 255, 0.83);
-    margin: 10px;
-    margin-top: 10px;
+    margin: 19px;
+    padding: 10px;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
     text-align: center;
+    
 }
-.text{
-    margin-top: 100px;
-    flex: content;
-    justify-content: flex-end;
-    justify-self: flex-end;
-    row-gap: 7rem;
+.news .date{
+    height: 57px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
 }
-.text p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.news .day{
+    font-size: 30px;
+}
+.article-text{
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+
+}
+.news .text{
+    margin-bottom: 13px;
+    font-family: 'poppins', sans-serif;
     font-size: 14px;
 }
-.text a{
-    margin-left: 10px;
-    color: #000000;
-    font-family: 'Dosis', sans-serif;
+.news .rmtext{
+    position: relative;
+}
+.news .rmtext a{
+    font-family: 'dosis', sans-serif;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+    color: black;
 }
-/* }
+.news .line{
+    position: absolute;
+    width: 20px;
+    bottom: 10px;
+    height: 1px;
+    background-color: #000000;
+    left: 100px;
+}
+
 .footer{
-    width: 100%;
-    height: 480px;
-    margin:0%;
-
-    background: #EFEFEF;
+    padding: 40px 20px 30px;
+    background-color: #efefef;
 }
-.footer1{
-
+.footer .location, 
+.footer .email, 
+.footer .phone{
+    margin: 10px 0px;
     display: flex;
-    flex-wrap: wrap;
-    font-family: 'poppins', sans-serif;
+    align-items: center;
+}
+.footer .address-text{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    font-style: normal;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
+    line-height: 24px;
 }
-.footer img{
-    margin-left: 12px;
-    margin-top: 52px;
-    justify-content: center;
+.footer svg.feather{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
-.footer input{
-    height: 40px;
-    width: 336px;
-    background: #F9F9F9;
-    border: 0.4px solid rgba(0, 0, 0, 0.38);
-} */
+.footer .Subscribe{
+    margin: 60px 0px 30px;
 
+}
+.footer input[type="text"]{
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #d9d9d9;
+    padding-left: 14px;
+}
+.footer button{
+    background-color: #d9d9d9;
+    padding: 10px 20px 8px;
+    border: 2px solid #d9d9d9;
+    cursor: pointer;
+    margin-left: -4px;
+}
+.Subscribe p{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+}
+.footer .sub-sub{
+    display: flex;
+    margin-top: 19px;
+}
+.hr{
+    margin-bottom: 22px;
+}
+.footer .copyright{
+    font-size: 22px;
+}
 
 @media screen and (max-width: 744px) {
     main{
